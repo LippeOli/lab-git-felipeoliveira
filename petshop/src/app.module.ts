@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { PetsModule } from './pets/pets.module';
 
 
 
@@ -19,6 +20,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       synchronize: true,
     }),
     UsersModule,
+    PetsModule,
+    
   ],
   controllers: [AppController],
   providers: [AppService],
